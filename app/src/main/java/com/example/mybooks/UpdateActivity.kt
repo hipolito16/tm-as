@@ -32,7 +32,7 @@ class UpdateActivity : AppCompatActivity() {
                 Toast.makeText(this, "Páginas não pode ser menor que 1", Toast.LENGTH_SHORT).show()
             } else if (livro?.lidas!! > binding.paginas.text.toString().toInt()) {
                 Toast.makeText(this,
-                    "Páginas não pode ser maior que o total de páginas lidas",
+                    "Páginas não pode ser menor que o total de páginas lidas",
                     Toast.LENGTH_SHORT).show()
             } else {
                 var livroUP = Livro(livro?.id,
